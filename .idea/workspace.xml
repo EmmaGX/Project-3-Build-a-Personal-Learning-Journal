@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4da80508-2f23-46e0-96f8-8746e4b6c49c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/journal.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -46,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609438821785</updated>
-      <workItem from="1609438823016" duration="5270000" />
+      <workItem from="1609438823016" duration="12191000" />
     </task>
     <servers />
   </component>
