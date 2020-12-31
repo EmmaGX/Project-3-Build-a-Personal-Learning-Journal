@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4da80508-2f23-46e0-96f8-8746e4b6c49c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/new.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/connection.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\web\Project-3-Build-a-Personal-Learning-Journal\php_learning_journal\inc" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609438821785</updated>
-      <workItem from="1609438823016" duration="4218000" />
+      <workItem from="1609438823016" duration="5270000" />
     </task>
     <servers />
   </component>
