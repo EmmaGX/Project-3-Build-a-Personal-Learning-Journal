@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/php_learning_journal/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/new.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609438821785</updated>
       <workItem from="1609438823016" duration="18927000" />
-      <workItem from="1609521012110" duration="11991000" />
+      <workItem from="1609521012110" duration="13683000" />
     </task>
     <servers />
   </component>

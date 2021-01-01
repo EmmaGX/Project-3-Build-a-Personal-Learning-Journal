@@ -11,14 +11,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $whatILearned = trim(filter_input(INPUT_POST, 'whatILearned', FILTER_SANITIZE_STRING));
     $ResourcesToRemember = trim(filter_input(INPUT_POST, 'ResourcesToRemember', FILTER_SANITIZE_STRING));
 
-    if (empty($title) || empty($date)) {
+    if (empty($title) || empty($date) || empty($timeSpent) || empty($whatILearned) || empty($ResourcesToRemember)) {
         $error_message = 'Please fill in the required fields: Title, Date, Time Spent and Learned';
     } else {
-        echo "title = $title<br />";
-        echo "date = $date<br />";
-        echo "timeSpent = $timeSpent<br />";
-        echo "whatILearned = $whatILearned<br />";
-        echo "ResourcesToRemember = $ResourcesToRemember<br />";
+        if (add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember)){
+            header('Location: index.php');
+            exit();
+        } else {
+            $error_message = 'Could not add entry';
+        }
     }
 }
 include "inc/header.php";
