@@ -1,11 +1,39 @@
 <?php
+require 'inc/functions.php';
+
+$pageTitle = "New Entry";
+$page = "new_entry";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $title = trim(filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING));
+    $date = trim(filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING));
+    $timeSpent = trim(filter_input(INPUT_POST,'timeSpent', FILTER_SANITIZE_NUMBER_INT));
+    $whatILearned = trim(filter_input(INPUT_POST, 'whatILearned', FILTER_SANITIZE_STRING));
+    $ResourcesToRemember = trim(filter_input(INPUT_POST, 'ResourcesToRemember', FILTER_SANITIZE_STRING));
+
+    if (empty($title) || empty($date)) {
+        $error_message = 'Please fill in the required fields: Title, Date, Time Spent and Learned';
+    } else {
+        echo "title = $title<br />";
+        echo "date = $date<br />";
+        echo "timeSpent = $timeSpent<br />";
+        echo "whatILearned = $whatILearned<br />";
+        echo "ResourcesToRemember = $ResourcesToRemember<br />";
+    }
+}
 include "inc/header.php";
+
 ?>
         <section>
             <div class="container">
                 <div class="new-entry">
                     <h2>New Entry</h2>
-                    <form>
+                    <?php
+                    if (isset($error_message)) {
+                        echo "<p>$error_message</p>";
+                    }
+                    ?>
+                    <form method="post" action="new.php">
                         <label for="title"> Title</label>
                         <input id="title" type="text" name="title"><br>
                         <label for="date">Date</label>

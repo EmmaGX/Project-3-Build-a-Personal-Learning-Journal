@@ -1,6 +1,11 @@
 <?php
+require "inc/functions.php";
+
+$pageTitle = "Journal Entries";
+$page = "journal_entries";
+
 include "inc/header.php";
-include "inc/functions.php";
+
 ?>
 
         <section>
