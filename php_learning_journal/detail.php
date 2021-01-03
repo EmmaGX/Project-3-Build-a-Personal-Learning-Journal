@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = trim(filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT));
+    $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
     $title = trim(filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING));
     $date = trim(filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING));
     $timeSpent = trim(filter_input(INPUT_POST, 'timeSpent', FILTER_SANITIZE_NUMBER_INT));
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($id) || empty($title) || empty($date) || empty($timeSpent) || empty($whatILearned) || empty($ResourcesToRemember)) {
         get_selected_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember);
         } else {
-            if (add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember)) {
+            if (add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember, $id)) {
                 header('Location: index.php');
                 exit();
             } else {

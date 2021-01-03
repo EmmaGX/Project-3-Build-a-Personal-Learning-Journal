@@ -16,7 +16,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($title) || empty($date) || empty($timeSpent) || empty($whatILearned)) {
         $error_message = 'Please fill in the required fields: Title, Date, Time Spent and Learned';
     } else {
-        if (add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember)){
+
+        if(isset($id)) {
+            $passId = $id;
+        } else {
+            $passId = NULL;
+        }
+        if (add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember, $passId)){
             header('Location: index.php');
             exit();
         } else {
@@ -52,6 +58,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <textarea id="whatILearned" rows="5" name="whatILearned" ><?php echo $whatILearned ?></textarea>
                         <label for="ResourcesToRemember">Resources to Remember</label>
                         <textarea id="ResourcesToRemember" rows="5" name="ResourcesToRemember" ><?php echo $ResourcesToRemember ?></textarea>
+                        <?php
+                        if (!empty($id)) {
+                            echo '<input type="hidden" name="id" value= "' . $id . '" />';
+                        }
+                        ?>
                         <input type="submit" value="Publish Entry" class="button">
                         <a href="#" class="button button-secondary">Cancel</a>
                     </form>
