@@ -60,3 +60,23 @@ function get_selected_entry($id) {
 }
 
 // var_dump(get_selected_entry(2));
+
+function delete_entry($id) {
+    include 'connection.php';
+
+    $sql = 'DELETE FROM entries WHERE id = ? ';
+
+    try {
+        $results = $db->prepare($sql);
+        $results->bindValue(1, $id, PDO::PARAM_INT);
+        $results->execute();
+    } catch (Exception $e) {
+        echo "Error!: " . $e->getMessage() . "<br />";
+        return false;
+    }
+    if ($results->rowCount() > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}

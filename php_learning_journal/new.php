@@ -1,8 +1,6 @@
 <?php
-require 'inc/functions.php';
-
-$pageTitle = "New Entry";
-$page = "new_entry";
+include 'inc/functions.php';
+include "inc/header.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = trim(filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING));
@@ -22,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
-include "inc/header.php";
+
 
 ?>
         <section>
