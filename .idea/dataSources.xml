@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:C:\web\Project-3-Build-a-Personal-Learning-Journal\php_learning_journal\journal.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="journal [2]" uuid="7f086203-2cc8-49ae-ac5c-ffff87102049">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\web\Project-3-Build-a-Personal-Learning-Journal\php_learning_journal\inc\journal.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

@@ -10,10 +10,16 @@ function get_journal_entries() {
     }
 }
 
-function add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember) {
+function add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember, $id = null) {
     include 'connection.php';
 
-    $sql = 'INSERT INTO entries(title, date, time_spent, learned, resources) VALUES(?, ?, ?, ?, ?)';
+    if ($id) {
+        $sql = 'UPDATE entries SET title = ?, date = ?, time_spent = ?, learned = ?, resources = ? ';
+    } else {
+        $sql = 'INSERT INTO entries(title, date, time_spent, learned, resources) VALUES(?, ?, ?, ?, ?)';
+
+    }
+
 
     try {
         $results = $db->prepare($sql);
@@ -22,6 +28,9 @@ function add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemembe
         $results->bindValue(3, $timeSpent, PDO::PARAM_INT);
         $results->bindValue(4, $whatILearned, PDO::PARAM_STR);
         $results->bindValue(5, $ResourcesToRemember, PDO::PARAM_STR);
+        if ($id) {
+            $results->bindValue(6, $id, PDO::PARAM_INT);
+        }
         $results->execute();
     } catch (Exception $e) {
         echo "Error!: " . $e->getMessage() . "<br />";

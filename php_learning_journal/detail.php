@@ -2,6 +2,9 @@
 include 'inc/functions.php';
 include 'inc/header.php';
 
+$pageTitle = 'New Project';
+
+
 if (isset($_GET['id'])) {
     list($id, $title, $date, $timeSpent, $whatILearned, $ResourcesToRemember) = get_selected_entry(filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT));
 }
@@ -17,9 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($id) || empty($title) || empty($date) || empty($timeSpent) || empty($whatILearned) || empty($ResourcesToRemember)) {
         get_selected_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember);
         } else {
-            //header('Location: index.php');
-            echo $error_message = 'Could not find entry';
-            exit();
+            if (add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemember)) {
+                header('Location: index.php');
+                exit();
+            } else {
+
+                echo $error_message = 'Could not find entry';
+            }
         }
     }
 
@@ -65,9 +72,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
     <div class="edit">
-        <p><a href="edit.php">Edit Entry</a></p>
+
+
+        <?php
+        echo "<p><a href='new.php?id=" . $id . "'>" . 'Edit Entry' . "</a></p>";
+        ?>
     </div>
 </section>
 <?php
-include "inc/footer.php";
+include 'inc/footer.php';
 ?>
+

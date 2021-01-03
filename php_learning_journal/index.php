@@ -14,6 +14,7 @@ include "inc/header.php";
                             echo "<h2><a href='detail.php?id=" . $entry['id'] . "'>" . $entry['title'] . "</a></h2>";
                             $entry_date = date("F d,Y", strtotime($entry['date']));
                             echo "<p>" . $entry_date . "</p><br />";
+
                             echo "<br />";
                         }
                         ?>
