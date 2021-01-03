@@ -30,38 +30,33 @@ function add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemembe
     return true;
 }
 
+function get_single_entry() {
+    include 'connection.php';
+
+    try {
+        return $db->query('SELECT id FROM entries');
+    } catch (Exception $e) {
+        echo "Error: " . $e->getMessage() . "</br>";
+        return false;
+    }
+}
 
 
+function get_selected_entry($id) {
+    include 'connection.php';
 
+    $sql = 'SELECT * FROM entries WHERE id = ?';
 
+    try {
+        $results = $db->prepare($sql);
+        $results->bindValue(1, $id, PDO::PARAM_INT);
+        $results->execute();
+    } catch (Exception $e) {
+        echo "Error!: " . $e->getMessage() . "<br />";
+        return false;
+       die();
+    }
+    return $results->fetch();
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//function get_selected_entry($id) {
-//    include "connection.php";
-//
-//    $sql = 'SELECT * FROM entries WHERE id = ?';
-//
-//    try {
-//        $results = $db->prepare($sql);
-//        $results->bindValue(1, $id, PDO::PARAM_INT);
-//        $results->execute();
-//    } catch (Exception $e) {
-//        echo "Error!: " . $e->getMessage() . "<br />";
-//        return false;
-//       die();
-//    }
-//    return $results->fetch();
-//}
 // var_dump(get_selected_entry(2));

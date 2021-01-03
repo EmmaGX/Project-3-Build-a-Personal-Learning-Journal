@@ -1,4 +1,9 @@
 <?php
+require "inc/functions.php";
+
+$pageTitle = "Edit Entry";
+$page = "edit_entry";
+
 include "inc/header.php";
 ?>
         <section>
