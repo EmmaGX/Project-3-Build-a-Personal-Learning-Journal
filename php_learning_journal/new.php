@@ -63,7 +63,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             echo '<input type="hidden" name="id" value= "' . $id . '" />';
                         }
                         ?>
-                        <input type="submit" value="Publish Entry" class="button">
+                        <input type="submit" value="<?php
+                            if (!empty($id)) {
+                                echo 'Update';
+                            } else {
+                                echo 'New';
+                            }
+                            ?> Entry" class="button">
                         <a href="#" class="button button-secondary">Cancel</a>
                     </form>
                 </div>

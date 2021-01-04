@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4da80508-2f23-46e0-96f8-8746e4b6c49c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/new.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
@@ -45,6 +50,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\web\Project-3-Build-a-Personal-Learning-Journal\php_learning_journal\inc" />
@@ -59,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609438821785</updated>
       <workItem from="1609438823016" duration="18927000" />
-      <workItem from="1609521012110" duration="56948000" />
+      <workItem from="1609521012110" duration="62200000" />
     </task>
     <servers />
   </component>

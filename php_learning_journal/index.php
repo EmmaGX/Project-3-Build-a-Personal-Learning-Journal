@@ -31,15 +31,7 @@ if (isset($_GET['msg'])) {
                         foreach (get_journal_entries() as $entry) {
                             echo "<li class='none'><h2><a href='detail.php?id=" . $entry['id'] . "'>" . $entry['title'] . "</a></h2></li>";
                             $entry_date = date("F d,Y", strtotime($entry['date']));
-                            echo "<p>" . $entry_date . "</p>";
-
-                            echo "<form method='post' action='index.php' onsubmit='return confirm(\"Are you sure you want to delete this entry?\")'; >\n";
-                            echo "<input type='hidden' value='" . $entry['id'] . "' name='delete'/>";
-                            echo "<input class='button' type='submit' value='Delete' /><br />";
-                            echo "<br />";
-                            echo "<br />";
-                            echo "<br />";
-                            echo "</form>";
+                            echo "<p>" . $entry_date . "</p><br />";
                         }
                         ?>
                         </ul>
