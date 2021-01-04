@@ -33,7 +33,7 @@ if (isset($_GET['msg'])) {
                             $entry_date = date("F d,Y", strtotime($entry['date']));
                             echo "<p>" . $entry_date . "</p>";
 
-                            echo "<form method='post' action='index.php'>\n";
+                            echo "<form method='post' action='index.php' onsubmit='return confirm(\"Are you sure you want to delete this entry?\")'; >\n";
                             echo "<input type='hidden' value='" . $entry['id'] . "' name='delete'/>";
                             echo "<input class='button' type='submit' value='Delete' /><br />";
                             echo "<br />";
