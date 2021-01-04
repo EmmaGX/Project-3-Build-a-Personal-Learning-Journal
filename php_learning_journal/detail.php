@@ -33,9 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 ?>
-
-
-
 <section>
     <div class="container">
         <div class="entry-list single">
@@ -77,8 +74,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="edit">
 
         <?php
-        echo "<p><a href='new.php?id=" . $id . "'>" . 'Edit Entry' . "</a></p><br />";
+        echo "<p><a class='button button.icon-right' href='new.php?id=" . $id . "'>" . 'Edit Entry' . "</a></p><br />";
         ?>
+
         <?php
         echo "<form method='post' action='index.php' onsubmit='return confirm(\"Are you sure you want to delete this entry?\")'; >\n";
         echo "<input type='hidden' value='" . $id . "' name='delete'/>";
