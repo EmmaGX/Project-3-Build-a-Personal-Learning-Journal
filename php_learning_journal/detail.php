@@ -2,9 +2,6 @@
 include 'inc/functions.php';
 include 'inc/header.php';
 
-$pageTitle = 'New Project';
-
-
 if (isset($_GET['id'])) {
     list($id, $title, $date, $timeSpent, $whatILearned, $ResourcesToRemember) = get_selected_entry(filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT));
 }

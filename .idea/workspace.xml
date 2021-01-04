@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4da80508-2f23-46e0-96f8-8746e4b6c49c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_learning_journal/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/inc/journal.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_learning_journal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_learning_journal/new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_learning_journal/new.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609438821785</updated>
       <workItem from="1609438823016" duration="18927000" />
-      <workItem from="1609521012110" duration="49922000" />
+      <workItem from="1609521012110" duration="55857000" />
     </task>
     <servers />
   </component>

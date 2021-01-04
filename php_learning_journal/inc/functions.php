@@ -38,18 +38,6 @@ function add_entry($title, $date, $timeSpent, $whatILearned, $ResourcesToRemembe
     return true;
 }
 
-function get_single_entry() {
-    include 'connection.php';
-
-    try {
-        return $db->query('SELECT id FROM entries');
-    } catch (Exception $e) {
-        echo "Error: " . $e->getMessage() . "</br>";
-        return false;
-    }
-}
-
-
 function get_selected_entry($id) {
     include 'connection.php';
 
@@ -67,7 +55,6 @@ function get_selected_entry($id) {
     return $results->fetch();
 }
 
-// var_dump(get_selected_entry(2));
 
 function delete_entry($id) {
     include 'connection.php';
@@ -82,9 +69,5 @@ function delete_entry($id) {
         echo "Error!: " . $e->getMessage() . "<br />";
         return false;
     }
-    if ($results->rowCount() > 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return true;
 }
